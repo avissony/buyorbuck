@@ -1,3 +1,14 @@
+#buyFont {
+    font-family: 'Pacifico', cursive;
+    font-size: 72px;
+}
+
+#buckFont {
+    font-family: 'Audiowide', cursive;
+    font-size: 69px;
+    color: #FF5733;
+}
+
 .nav-bar {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -207,15 +218,16 @@
 }
 
 .app-dashboard-search {
-    background: #41525e;
+    background: #33DBFF;
+    background: #FFEAE5;
     border: 0;
     margin-bottom: 0;
-    color: #fefefe;
+    color
 }
 
 .app-dashboard-search:active,
 .app-dashboard-search:focus {
-    background: #222b31;
+    background: #FEC5F1;
 }
 
 .app-dashboard-search-icon {
@@ -249,7 +261,7 @@
 
 .app-dashboard-top-bar-actions button.hollow:hover {
     background: #fefefe;
-    color: #1779ba;
+    color: #FFEAE5;
 }
 
 .app-dashboard-top-bar-actions .fa-smile-o {
@@ -424,10 +436,10 @@ screen and (min-width: 64em) {
 
 .button-hover-reveal-wrapper {
     overflow: hidden;
-    border: 2px solid #FF5733;
+    border: 2px solid #ff5733;
     border-radius: 5000px;
     text-align: center;
-    width: 50%;
+    width: 100%;
     background: #fefefe;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -438,15 +450,16 @@ screen and (min-width: 64em) {
 }
 
 .button-hover-reveal-wrapper:hover {
-    border: none;
-    background-color: #FF5733;
+    border: white 1px solid;
+    background-color: #ff5733;
     transition: background-color 0.5s ease;
 }
 
 .button-hover-reveal-wrapper:hover .button-hover-reveal {
     display: block;
-    font-size: 22px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 22px;
+    border: white 1px solid;
 }
 
 .button-hover-reveal-wrapper:hover .button-hover-reveal:hover {
@@ -466,9 +479,9 @@ screen and (min-width: 64em) {
 }
 
 .button-hover-reveal-wrapper label {
-    padding: 10px;
-    color: #FF5733;
-    font-size: 22px;
+    padding: 16px;
+    color: #ff5733;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -476,16 +489,21 @@ screen and (min-width: 64em) {
 /*IMAGE CARD*/
 
 .product-image-gallery {
-    background-color: #fefefe;
+    background-color: #ff5733;
     padding: 1.5rem;
+    width: 60%;
+    display: block;
+    margin: auto;
 }
 
 .pdp-product-image {
     justify-content: center;
     margin-bottom: 20px;
-    border: solid 4px #847777;
+    border: solid 2px #DDD9D9;
     border-radius: 80px;
     height: 450px;
+    display: block;
+    margin: auto;
     /*box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
     line-height: 0;
     border-radius: 3px;*/
