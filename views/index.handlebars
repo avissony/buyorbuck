@@ -1,60 +1,59 @@
-<!--sat dashboard-->
+<!--new 05-13-17 dashboard-->
+
 <div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
+   <br> <br> <br>
+   <ul class="vertical menu" data-accordion-menu>
+    <li class="navMenuHead"><a href="#">Designers</a>
+      {{!--<ul class="menu vertical nested">--}}
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Meet them</a></li>
+        <li><a href="#">Be one</a></li>
+       </ul>
+    </li>
     <ul class="vertical menu" data-accordion-menu>
-        <li><a href="#">SERVICES</a>
-            <ul class="menu vertical nested">
-                <li><a href="#">Brand</a></li>
-                <li><a href="#">Web Apps</a></li>
-                <li><a href="#">Mobile Apps</a></li>
-            </ul>
-        </li>
-        <li><a href="#">PRODUCTS</a>
-            <ul class="menu vertical nested">
-                <li><a href="#">Product 1</a></li>
-                <li><a href="#">Product 2</a></li>
-                <li><a href="#">Product 3</a></li>
-            </ul>
-        </li>
-        <li><a href="#">CITIES</a>
-            <ul class="menu vertical nested">
-                <li><a href="#">London</a></li>
-                <li><a href="#">New York</a></li>
-                <li><a href="#">Paris</a></li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="vertical menu">
+    <li class="navMenuHead"><a href="#">Search Clothing</a>
+      {{!--<ul class="menu vertical nested">--}}
+        <li><a href="#">Male</a></li>
+        <li><a href="#">Female</a></li>
+        <li><a href="#">Children</a></li>
+       </ul>
+     </li>
+     <ul class="vertical menu" data-accordion-menu>
+    <li class="navMenuHead"><a href="#">You</a>
+      {{!--<ul class="menu vertical nested">--}}
+        <li><a href="#">Buys</a></li>
+        <li><a href="#">Favorites</a></li>
+       </ul>
+    </li>
+  {{!--another menu formatting option--}}
+    {{!--<ul class="vertical menu">
         <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
         <li><a href="#">Login</a></li>
         <li><a href="#">Register</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Support</a></li>
-    </ul>
-    <ul class="vertical menu">
-        <li><a href="#">Journal</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Students</a></li>
-    </ul>
+    </ul>--}}
+   
+    <br><br><br>
     <ul class="menu simple social-links">
         <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
         <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
         <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+        
     </ul>
 </div>
-<div class="off-canvas-content" data-off-canvas-content>
     <div class="nav-bar">
         <div class="nav-bar-left">
-            <a class="nav-bar-logo"><img class="logo" src="http://placehold.it/150x30"></a>
+            <h1 class="text-center"><span id="buyFont">Buy</span>or<span id="buckFont">Buck?</span></h1>
         </div>
         <div class="nav-bar-right">
             <ul class="menu">
-                <li class="hide-for-small-only"><a href="#">TOUR</a></li>
-                <li class="hide-for-small-only"><a href="#">LOGIN</a></li>
+                {{!--click options for main nav--}}
+                {{!--<li class="hide-for-small-only"><a href="#">TOUR</a></li>--}}
+                
                 <li>
                     <li>
+                        {{!--right side off page hidden nav--}}
                         <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
                             <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
                             <div class="hamburger">
@@ -67,103 +66,14 @@
             </ul>
         </div>
     </div>
-    <div class="body-info">
-        <h4> Multilevel Off-Canvas </h4>
-        <a class="button disabled" href="#">Watch Video (coming soon)</a>
-    </div>
-</div>
-<!--DASHBOARD-->
-<div class="app-dashboard shrink-medium">
-    <div class="row expanded app-dashboard-top-nav-bar">
-        <div class="columns medium-2">
-            <button data-toggle="app-dashboard-sidebar" class="menu-icon hide-for-medium"></button>
-            <a class="app-dashboard-logo">BUYorBUCK</a>
-        </div>
-        <div class="columns show-for-medium">
-            <div class="app-dashboard-search-bar-container">
-                <input class="app-dashboard-search" type="search" placeholder="Search">
-                <i class="app-dashboard-search-icon fa fa-search"></i>
-            </div>
-        </div>
-        <div class="columns shrink app-dashboard-top-bar-actions">
-            <button href="#" class="button hollow">LOGIN</button>
-            <h1 class="text-center"><span id="buyFont">Buy</span>or<span id="buckFont">Buck?</span></h1>
-            <a href="#" height="30" width="30" alt=""><i class="fa fa-smile-o" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    <div class="app-dashboard-body off-canvas-wrapper">
-        <div id="app-dashboard-sidebar" class="app-dashboard-sidebar position-left off-canvas off-canvas-absolute reveal-for-medium" data-off-canvas>
-            <div class="app-dashboard-sidebar-title-area">
-                <div class="app-dashboard-close-sidebar">
-                    <h3 class="app-dashboard-sidebar-block-title">Items</h3>
-                    <!-- Close button -->
-                    <button id="close-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-sidebar-close-button show-for-medium" aria-label="Close menu" type="button">
-                        <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-left"></i></a></span>
-                    </button>
-                </div>
-                <div class="app-dashboard-open-sidebar">
-                    <button id="open-sidebar" data-app-dashboard-toggle-shrink class="app-dashboard-open-sidebar-button show-for-medium" aria-label="open menu" type="button">
-                        <span aria-hidden="true"><a href="#"><i class="large fa fa-angle-double-right"></i></a></span>
-                    </button>
-                </div>
-            </div>
-            <div class="app-dashboard-sidebar-inner">
-                <ul class="menu vertical">
-                    <li>
-                        <a href="#" class="is-active">
-                            <i class="large fa fa-institution"></i><span class="app-dashboard-sidebar-text">Buildings</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <i class="large fa fa-hourglass"></i><span class="app-dashboard-sidebar-text">Wishlist</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">search STYLES</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <i class="large fa fa-industry"></i><span class="app-dashboard-sidebar-text">meet DESIGNERS</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--PIC TRY-->
-        <!--<div class="row align-center">
-                <div class="product-image-gallery">
-                    <img class="pdp-product-image" id="main-product-image" src="images/shirtPink.jpg" alt="pink shirt">
-                    <br>
-                    <ul class="menu product-thumbs align-center">
-                        <li>
-                            <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+1"> <img src="images/shirtPink.jpg" alt="pink shirt"></a>
-                        </li>
-                        <li>
-                            <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+2"><img src="http://placehold.it/50x50" alt=""></a>
-                        </li>
-                        <li>
-                            <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+3"><img src="http://placehold.it/50x50" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>-->
-        <!--END PIC TRY-->
-        <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+         <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
             <div class="row align-center">
-                <h1 class="text-center"><span id="buyFont">Buy</span>or<span id="buckFont">Buck?</span></h1>
+                {{!--<h1 class="text-center"><span id="buyFont">Buy</span>or<span id="buckFont">Buck?</span></h1>--}}
                 <!--Product Image Gallery for an eCommerce site to show multiple images of a product.-->
                 <div class="product-image-gallery">
                     <div class="pdp-product-image" id="main-product-image"></div>
                     <br>
-                    <!--CHOICE BUTTONS-->
+                    <!--CHOICE buy or buck BUTTONS-->
                     <div class="button-hover-reveal-wrapper">
                         <label>WILL BE PULLED FROM IMAGE OBJECT</label>
                         <a href="../buyorbuck/index.html" class="button-hover-reveal">BUY</a>
@@ -185,11 +95,6 @@
                 </div>
             </div>
         </div>
-    </div>
+ 
 </div>
-<!--
-    <div class="row">
-        <div class="large-12 columns">
-            <h1>like a jumbotron</h1>
-        </div>
-    </div>-->
+ 
