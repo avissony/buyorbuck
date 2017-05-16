@@ -13,6 +13,7 @@ var path = require("path");
 module.exports = function(app) {
   app.get('/', homeController.renderHome);
 
-
   app.get('/about', homeController.renderAbout);
+
+  
 };
