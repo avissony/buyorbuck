@@ -1,15 +1,28 @@
 #buyFont {
     font-family: 'Pacifico', cursive;
-    font-size: 72px;
+    font-size: 50px;
+        color: white;
 }
 
 #buckFont {
     font-family: 'Audiowide', cursive;
-    font-size: 69px;
-    color: #FF5733;
+    font-size: 44px;
+
 }
 
-.nav-bar {
+#tagFont{
+    font-family: 'Audiowide', cursive;
+    color: white;
+}
+
+.navMenuHead{ 
+font-weight: bold;
+font-family: 'Audiowide', cursive;
+font-size: larger; 
+color: black;
+
+}
+div.nav-bar {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -20,8 +33,8 @@
     -ms-flex-align: center;
     align-items: center;
     background: #FF5733;
-    height: 75px;
-    margin-bottom: 75px;
+    height: 20%;
+    margin-bottom: 15px;
 }
 
 .nav-bar .nav-bar-logo {
@@ -38,7 +51,7 @@
 }
 
 .nav-bar a:hover {
-    color: #a8b8c3;
+    color: white;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -60,7 +73,7 @@
     padding: 1.6rem;
     color: #fefefe;
     text-transform: uppercase;
-    background-color: #566d7c;
+    background-color: #FF5733;
     transition: background-color 0.2s ease-in;
     cursor: pointer;
 }
@@ -71,7 +84,7 @@
 }
 
 .nav-bar .offcanvas-trigger:hover {
-    background-color: #6b879a;
+    background-color: #FF5733;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -91,7 +104,7 @@
 }
 
 .multilevel-offcanvas .menu a {
-    color: rgba(254, 254, 254, 0.6);
+    color: white;
     padding-top: 7px;
     padding-bottom: 7px;
     transition: color 0.2s ease-in;
@@ -106,7 +119,7 @@
 }
 
 .multilevel-offcanvas .is-accordion-submenu-parent>a::after {
-    border-color: rgba(254, 254, 254, 0.6) transparent transparent;
+    border-color: white (254, 254, 254, 0.6) transparent transparent;
 }
 
 .multilevel-offcanvas .social-links {
@@ -437,7 +450,7 @@ screen and (min-width: 64em) {
 .button-hover-reveal-wrapper {
     overflow: hidden;
     border: 2px solid #ff5733;
-    border-radius: 5000px;
+    border-radius: 9px;
     text-align: center;
     width: 100%;
     background: #fefefe;
@@ -447,6 +460,14 @@ screen and (min-width: 64em) {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-top: 0px;
+    
+}
+
+div#main-product-image {
+    margin-top: 0px;
+    background: black;
+    height: 50%;
 }
 
 .button-hover-reveal-wrapper:hover {
@@ -481,6 +502,7 @@ screen and (min-width: 64em) {
 .button-hover-reveal-wrapper label {
     padding: 16px;
     color: #ff5733;
+
     font-size: 16px;
     font-weight: bold;
 }
@@ -489,9 +511,10 @@ screen and (min-width: 64em) {
 /*IMAGE CARD*/
 
 .product-image-gallery {
-    background-color: #ff5733;
-    padding: 1.5rem;
-    width: 60%;
+    background-color: navajowhite;
+    padding: .2rem;
+    /*border-radius: 10px;*/
+    width: 40%;
     display: block;
     margin: auto;
 }
@@ -526,7 +549,7 @@ screen and (min-width: 64em) {
     border-radius: 3px;
     width: 50px;
     height: 50px;
-    border: none;
+    padding: 50px;
 }
 
 
@@ -585,7 +608,7 @@ screen and (min-width: 64em) {
   padding: 1.6rem;
   color: #fefefe;
   text-transform: uppercase;
-  background-color: #566d7c;
+  background-color: #FF5733;
   transition: background-color 0.2s ease-in;
   cursor: pointer;
 }
@@ -596,7 +619,7 @@ screen and (min-width: 64em) {
 }
 
 .nav-bar .offcanvas-trigger:hover {
-  background-color: #6b879a;
+  background-color: #FF5733;
 }
 
 @media screen and (max-width: 39.9375em) {
@@ -616,7 +639,7 @@ screen and (min-width: 64em) {
 }
 
 .multilevel-offcanvas .menu a {
-  color: rgba(254, 254, 254, 0.6);
+  color: white;
   padding-top: 7px;
   padding-bottom: 7px;
   transition: color 0.2s ease-in;
@@ -687,6 +710,85 @@ screen and (min-width: 64em) {
   transition: all 0.3s ease-in-out;
 }
 
+
+.card-profile-stats {
+  border: 1px solid #cacaca;
+  margin: 0 0 1.25rem;
+  padding: 1.25rem;
+  background: #fefefe;
+}
+
+.card-profile-stats .card-profile-stats-intro {
+  text-align: center;
+}
+
+.card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+  border-radius: 50%;
+  margin: 0 0 1.25rem;
+}
+
+.card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-content p:last-child {
+  margin: 0;
+}
+
+.card-profile-stats .card-profile-stats-container {
+  text-align: center;
+}
+
+.card-profile-stats .card-profile-stats-container .card-profile-stats-statistic {
+  margin: 0 0 1.25rem;
+}
+
+.card-profile-stats .card-profile-stats-container .card-profile-stats-statistic p:last-child {
+  margin: 0;
+}
+
+.card-profile-stats .card-profile-stats-more .card-profile-stats-more-link {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.card-profile-stats .card-profile-stats-more .card-profile-stats-more-content {
+  display: none;
+}
+
+
+@media print, screen and (min-width: 64em) {
+  .card-profile-stats .card-profile-stats-intro {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    text-align: left;
+  }
+  .card-profile-stats .card-profile-stats-intro .card-profile-stats-intro-pic {
+    margin: 0 1.25rem 0 0;
+    max-width: 250px;
+  }
+  .card-profile-stats .card-profile-stats-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
+
+
+/*conflict needs to be resolved*/
 .hamburger .line:last-child {
   margin-bottom: 0;
 <<<<<<< HEAD:public/styles/app.css
