@@ -1,100 +1,32 @@
-<!--new 05-13-17 dashboard-->
+<!-- Main Page Information -->
 
-<div class="multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
-   <br> <br> <br>
-   <ul class="vertical menu" data-accordion-menu>
-    <li class="navMenuHead"><a href="#">Designers</a>
-      {{!--<ul class="menu vertical nested">--}}
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Meet them</a></li>
-        <li><a href="#">Be one</a></li>
-       </ul>
-    </li>
-    <ul class="vertical menu" data-accordion-menu>
-    <li class="navMenuHead"><a href="#">Search Clothing</a>
-      {{!--<ul class="menu vertical nested">--}}
-        <li><a href="#">Male</a></li>
-        <li><a href="#">Female</a></li>
-        <li><a href="#">Children</a></li>
-       </ul>
-     </li>
-     <ul class="vertical menu" data-accordion-menu>
-    <li class="navMenuHead"><a href="#">You</a>
-      {{!--<ul class="menu vertical nested">--}}
-        <li><a href="#">Buys</a></li>
-        <li><a href="#">Favorites</a></li>
-       </ul>
-    </li>
-  {{!--another menu formatting option--}}
-    {{!--<ul class="vertical menu">
-        <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Support</a></li>
-    </ul>--}}
-   
-    <br><br><br>
-    <ul class="menu simple social-links">
-        <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-        
-    </ul>
-</div>
-    <div class="nav-bar">
-        <div class="nav-bar-left">
-            <h5 class="text-center"><span id="buyFont">&nbsp;&nbsp;Buy</span>or<span id="buckFont">Buck?</span> <span id="tagFont">&nbsp;&nbsp;tell designers what you'd do...</span></h5>
-        </div>
-        <div class="nav-bar-right">
-            <ul class="menu">
-                {{!--click options for main nav--}}
-                {{!--<li class="hide-for-small-only"><a href="#">TOUR</a></li>--}}
-                
+<div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
+    <div class="row align-center">
+        {{!--
+        <h1 class="text-center"><span id="buyFont">Buy</span>or<span id="buckFont">Buck?</span></h1>--}}
+        <!--Product Image Gallery for an eCommerce site to show multiple images of a product.-->
+        <div class="product-image-gallery">
+            <div class="pdp-product-image" id="main-product-image"></div>
+            <br>
+            <!--CHOICE buy or buck BUTTONS-->
+            <div class="button-hover-reveal-wrapper">
+                <label>WILL BE PULLED FROM IMAGE OBJECT</label>
+                <a href="../buyorbuck/index.html" class="button-hover-reveal">BUY</a>
+                <a href="../buyorbuck/index.html" class="button-hover-reveal">BUCK</a>
+            </div>
+            <br>
+            <br>
+            <ul class="menu product-thumbs align-center">
                 <li>
-                    <li>
-                        {{!--right side off page hidden nav--}}
-                        <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
-                            <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
-                            <div class="hamburger">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </div>
-                        </button>
-                    </li>
+                    <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+1"><img src="images/shirtPink.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+2"><img src="http://placehold.it/50x50" alt=""></a>
+                </li>
+                <li>
+                    <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+3"><img src="http://placehold.it/50x50" alt=""></a>
+                </li>
             </ul>
         </div>
     </div>
-         <div class="app-dashboard-body-content off-canvas-content" data-off-canvas-content>
-            <div class="row align-center">
-                {{!--<h1 class="text-center"><span id="buyFont">Buy</span>or<span id="buckFont">Buck?</span></h1>--}}
-                <!--Product Image Gallery for an eCommerce site to show multiple images of a product.-->
-                <div class="product-image-gallery">
-                    <div class="pdp-product-image" id="main-product-image"></div>
-                    <br>
-                    <!--CHOICE buy or buck BUTTONS-->
-                    <div class="button-hover-reveal-wrapper">
-                        <label>WILL BE PULLED FROM IMAGE OBJECT</label>
-                        <a href="../buyorbuck/index.html" class="button-hover-reveal">BUY</a>
-                        <a href="../buyorbuck/index.html" class="button-hover-reveal">BUCK</a>
-                    </div>
-                    <br>
-                    <br>
-                    <ul class="menu product-thumbs align-center">
-                        <li>
-                            <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+1"><img src="images/shirtPink.jpg" alt=""></a>
-                        </li>
-                        <li>
-                            <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+2"><img src="http://placehold.it/50x50" alt=""></a>
-                        </li>
-                        <li>
-                            <a class="sim-thumb" data-image="http://placehold.it/350x350?text=Image+3"><img src="http://placehold.it/50x50" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
- 
 </div>
- 
