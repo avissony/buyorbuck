@@ -5,11 +5,17 @@
 // Dependencies
 // =============================================================
 var homeController = require('../controllers/home');
+
 var path = require("path");
 
 // Routes
 // =============================================================
 module.exports = function(app) {
+  
   app.get('/', homeController.renderHome);
-   app.get('/products', homeController.renderProducts);
+
+  app.get('/products', homeController.renderProducts);
+
+  app.get('/about', homeController.renderAbout);
+
 };

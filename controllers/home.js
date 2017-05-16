@@ -11,7 +11,15 @@ module.exports = {
     // get ("/:
     // then req.params.id")
     res.render('index', {
-      msg: "Welcome! this is data being passed into the render function!"
+
+    });
+  },
+
+    renderAbout: function(req, res) {
+    res.render('about', {
+
     });
   }
+  
 };
+
