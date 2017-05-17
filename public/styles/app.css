@@ -747,15 +747,15 @@ screen and (min-width: 64em) {
     border: 0;
     padding-left: 0;
     box-shadow: none;
-    border-bottom: 1px solid #1779ba;
+    border-bottom: 1px solid #FF5733;
     font-weight: 400;
 }
 .login-box-input:focus {
-    color: #1779ba;
+    color: #FF5733;
     transition: 0.2s ease-in-out;
     box-shadow: none;
     border: 0;
-    border-bottom: 2px solid #1779ba;
+    border-bottom: 2px solid #FF5733;
 }
 .login-box-submit-button {
     display: inline-block;
@@ -770,8 +770,8 @@ screen and (min-width: 64em) {
     line-height: 1;
     text-align: center;
     cursor: pointer;
-    background-color: #1779ba;
-    color: #fefefe;
+    background-color: navajowhite;
+    color: black;
     display: block;
     width: 100%;
     margin-right: 0;
@@ -785,7 +785,7 @@ screen and (min-width: 64em) {
 }
 .login-box-submit-button:hover,
 .login-box-submit-button:focus {
-    background-color: #126195;
+    background-color: navajowhite;
     color: #fefefe;
 }
 .login-box-submit-button:hover,
@@ -808,7 +808,7 @@ screen and (min-width: 64em) {
     line-height: 1;
     text-align: center;
     cursor: pointer;
-    background-color: #3b5998;
+    background-color: #FF5733;
     color: #fefefe;
     display: block;
     width: 100%;
@@ -899,3 +899,78 @@ screen and (min-width: 64em) {
     color: #fefefe;
     text-align: center;
 }
+
+/*designers layout*/
+
+
+.card-user-container {
+  margin-bottom: 1rem;
+  background-color: #fefefe;
+  color: #0a0a0a;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 0;
+}
+
+.card-user-container .card-user-avatar .user-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 11.875rem;
+  height: 11.875rem;
+  padding: 0.9375rem;
+}
+
+.card-user-container .card-user-avatar .user-image:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card-user-container .card-user-bio {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-user-container .card-user-bio .location {
+  display: inline-block;
+  margin: 0 0.9375rem;
+  color: #767676;
+  font-size: 0.875rem;
+}
+
+.card-user-container .card-user-bio .location-icon,
+.card-user-container .card-user-bio .location-text {
+  display: inline-block;
+  padding: 0 0.3125rem;
+}
+
+.card-user-container .card-user-social {
+  background: #e6e6e6;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-user-container .card-user-social ul {
+  display: inline-block;
+}
+
+.card-user-container .card-user-social ul li {
+  margin: 0 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.card-user-container .card-user-social ul li:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card-user-container .card-user-button {
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
