@@ -16,6 +16,11 @@ module.exports = {
         res.render('designers', {});
     },
 
+    // leslie added this pg 05-18
+     renderDesignerProfile: function(req, res) {
+        res.render('designerProfile', {});
+    },
+
     renderSignUp: function(req, res) {
         res.render('signup', {});
     },

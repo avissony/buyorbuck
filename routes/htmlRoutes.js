@@ -20,6 +20,9 @@ module.exports = function(app) {
     app.get('/upload', homeController.renderUpload);
 
     app.get('/designers', homeController.renderDesigners);
+
+    // leslie added this pg 05-18
+    app.get('/designerProfile', homeController.renderDesignerProfile);
     
     app.get('/signup', homeController.renderSignUp);
 
