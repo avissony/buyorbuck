@@ -33,6 +33,7 @@ div.nav-bar {
     background: #FF5733;
     height: 20%;
     margin-bottom: 15px;
+    
 }
 .nav-bar .nav-bar-logo {
     padding: 1.8rem;
@@ -82,7 +83,7 @@ div.nav-bar {
     }
 }
 .multilevel-offcanvas {
-    background: #222b31;
+    background: #ff5733;
     padding: 20px;
     color: #fefefe;
 }
@@ -234,6 +235,9 @@ div.nav-bar {
 .app-dashboard-top-bar-actions button.hollow:hover {
     background: #fefefe;
     color: #FFEAE5;
+    border: 1px solid #FF5733;
+    color: black;
+    background: navajowhite;
 }
 .app-dashboard-top-bar-actions .fa-smile-o {
     color: #fefefe;
@@ -409,8 +413,9 @@ screen and (min-width: 64em) {
 }
 div#main-product-image {
     margin-top: 0px;
-    background: black;
-    height: 50%;
+    background: navajowhite;
+    height: 100%;
+    width: 100%;
 }
 .button-hover-reveal-wrapper:hover {
     border: white 1px solid;
@@ -462,22 +467,21 @@ i.fa-angle-double-down {
     background-color: navajowhite;
     padding: .2rem;
     /*border-radius: 10px;*/
-    
     width: 40%;
     display: block;
     margin: auto;
 }
 .pdp-product-image {
     justify-content: center;
-    margin-bottom: 20px;
     /*    border: solid 2px #DDD9D9;
-    border-radius: 80px;*/
-    height: 700px;
+      /*height: 700px;*/
     display: block;
-    margin: auto;
+    /*margin: auto;*/
     /*box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
     line-height: 0;
     border-radius: 3px;*/
+        width: 100%;
+        height: 100%
 }
 .product-thumbs a {
     margin-left: 8px;
@@ -745,13 +749,14 @@ screen and (min-width: 64em) {
     padding: 2.5rem;
 }
 .login-box-social-section {
-    background: url("https://images.pexels.com/photos/179124/pexels-photo-179124.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-    background: url("images/clothesOutside.jpg");
+    background: url("images/phone.jpg");
+    box-shadow: 0 0 8px 4px white inset;
     background-size: cover;
     background-position: center;
 }
 .signup-box-social-section-inner {
-    background: url("images/windows.jpg");
+    background: url("images/windows2.jpg");
+    box-shadow: 0 0 8px 4px white inset;
     background-size: cover;
     background-position: center;
 }
@@ -916,6 +921,43 @@ screen and (min-width: 64em) {
 
 /*designers layout*/
 
+/*designers' pg header*/
+
+.hero-section-text h1 {
+    color: white;
+    font-size: -webkit-xxx-large;
+    font-size: 72px;
+        font-family: 'Audiowide', cursive;
+        opacity: 1;
+}
+
+.hero-section {
+  background: url("images/movement.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 30vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          /*opacity: .7;*/
+           box-shadow: 0 0 8px 4px white inset;
+}
+
+.hero-section .hero-section-text {
+  /*color: #fefefe;*/
+  text-shadow: 1px 2px 2px black; 
+}
+
+.specialty{
+    color: #ff5733;
+    font-weight: bold; 
+}
 
 .card-user-container {
   margin-bottom: 1rem;
@@ -986,22 +1028,40 @@ screen and (min-width: 64em) {
   padding: 1rem;
 }
 
+
 /*Buy or buck 2nd*/
+
+#buckButton {
+    font-family: 'Audiowide', cursive; 
+}
+
+ label{
+color:darkslategray;
+background-color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    /*border: black .2px solid;*/
+    border-radius: 10px;
+    padding: 1px;
+    text-align: center;
+}
 
 .mobile-app-toggle {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  border: 1px solid #1779ba;
+  border: 1px solid #FF5733;
+  background-color: white;
   border-radius: 0.625rem;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .mobile-app-toggle .button {
   background: transparent;
-  color: #1779ba;
+  color: #FF5733;
+font-family: 'Audiowide', cursive;
   margin-bottom: 0;
   -webkit-flex: 1 0 0;
       -ms-flex: 1 0 0px;
@@ -1009,12 +1069,14 @@ screen and (min-width: 64em) {
 }
 
 .mobile-app-toggle .button:nth-child(n+1) {
-  border-left: 1px solid #1779ba;
+  border-left: 1px solid #ff5733;
 }
 
 .mobile-app-toggle .button.is-active {
-  background: #1779ba;
-  color: #fefefe;
+ color: white; 
+  background-color: #FF5733;
+      font-family: 'Audiowide', cursive;
+      border: 1px solid #ff5733;
 }
 
 
@@ -1025,7 +1087,6 @@ screen and (min-width: 64em) {
     background-color: navajowhite;
     padding: .2rem;
     /*border-radius: 10px;*/
-    
     width: 100%;
     display: block;
     margin: auto;
@@ -1081,11 +1142,34 @@ div.nav-bar {
     /*background-color: #FF5733;*/
     transition: background-color 0.2s ease-in;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
         padding: 4px;
 }
 
+.hero-section {
+  background: url("images/movement.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 10vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          opacity: .7;
+}
 
+.hero-section-text h1 {
+    color: white;
+    font-size: -webkit-xxx-large;
+        font-family: 'Audiowide', cursive;
+        opacity: 1;
+        margin-top: 7px;
+}
 
 }
 
