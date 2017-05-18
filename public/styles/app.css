@@ -405,6 +405,7 @@ screen and (min-width: 64em) {
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 0px;
+    padding: -5px
 }
 div#main-product-image {
     margin-top: 0px;
@@ -419,28 +420,42 @@ div#main-product-image {
 .button-hover-reveal-wrapper:hover .button-hover-reveal {
     display: block;
     font-size: 16px;
-    padding: 22px;
+    padding: 2px;
     border: white 1px solid;
 }
 .button-hover-reveal-wrapper:hover .button-hover-reveal:hover {
-    transition: background-color 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.1);
+    /*transition: background-color 0.5s ease;*/
+    background-color: #7FDBFF;
+    color: black;
+    border: white 3px solid;
 }
 .button-hover-reveal-wrapper:hover label {
     display: none;
+     padding: 0px;
 }
 .button-hover-reveal-wrapper .button-hover-reveal {
     display: none;
     color: #fefefe;
     width: 50%;
     z-index: 1;
+    padding: 0;
+    color: #ff5733;
 }
 .button-hover-reveal-wrapper label {
-    padding: 16px;
+    padding: 0px;
     color: #ff5733;
     font-size: 16px;
     font-weight: bold;
+    /*margin-top: 15px;*/
+    
 }
+
+/*fontawesome double down icon*/
+i.fa-angle-double-down {
+    font-size: 19px;
+}
+
+
 /*IMAGE CARD*/
 
 .product-image-gallery {
@@ -945,7 +960,7 @@ screen and (min-width: 64em) {
 }
 
 .card-user-container .card-user-social {
-  background: #e6e6e6;
+  background: navajowhite;
   padding: 1rem;
   text-align: center;
 }
@@ -1075,20 +1090,27 @@ div.nav-bar {
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {
-            .product-image-gallery {
-    background-color: navajowhite;
-    padding: .2rem;
-    /*border-radius: 10px;*/
-    
-    width: 80%;
-    display: block;
-    margin: auto;
+
+}
+
+
+/* iPad Portrait */
+/*leslie add in*/
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+
+   
+}
+ 
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+
 }
 }
 
+ 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (min-width: 40em) {
 
 }
 
@@ -1097,3 +1119,4 @@ div.nav-bar {
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
