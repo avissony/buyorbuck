@@ -1,82 +1,31 @@
-<form data-abide novalidate>
-    <div class="row">
-        <div align="center">
-            <h2>Create an Account</h2></div>
-        <br />
-        <div class="medium-6 medium-centered large-centered large-6 columns">
-            <form data-abide>
-                <div class="name-field">
-                    <label>First Name</label>
-                    <small class="error" data-error-message="">A first and last name is required.</small>
-                    <input type="text" required id="firstName"></input>
-                </div>
-                <div class="name-field">
-                    <label>Last Name</label>
-                    <small class="error" data-error-message="">A first and last name is required.</small>
-                    <input type="text" required id="lastName"></input>
-                </div>
-                <div class="email-field">
-                    <label>Email</label>
-                    <small class="error">An email address is required and your username.</small>
-                    <input id="email" type="email" required></input>
-                </div>
-                <div class="email-field">
-                    <label>Re-enter Email</label>
-                    <small class="error">The emails must match.</small>
-                    <input type="email" required></input>
-                </div>
-                <div class="password">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" required="" name="password"></input>
-                    <small class="error"></small>
-                </div>
-                <div class="password2">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <small class="error" data-error-message="">Passwords must match.</small>
-                    <input id="confirmPassword" type="password" data-equalto="password" required="" name="confirmPassword" data-invalid=""></input>
-                </div>
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Select a focus
-                            <select>
-                                <option value="#"></option>
-                                <option value="maleclothing">Male Clothing</option>
-                                <option value="femaleclothing">Female CLothing</option>
-                                <option value="childrensclothing">Children's Clothing</option>
-                            </select>
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="large-12 columns">
-                        <label>Your Bio
-                            <textarea placeholder="Enter your information here..."></textarea>
-                        </label>
-                    </div>
-                </div>
-                <div class="picture">
-                    <label for="exampleFileUpload" class="button success">Upload Profile Photo</label>
-                    <input type="file" id="exampleFileUpload" class="show-for-sr">
-                </div>
-                <div class="terms">
-                    <label><small>By creating an account you have read and agree to the <a href="#">terms and conditions</a>.</small></label>
-                    <input id="checkbox1" type="checkbox" required></input>
-                    <label for="checkbox1">I Agree</label>
-                    <small class="error">You must agree to the terms and conditions.</small>
-                </div>
-                <div class="row">
-                    <fieldset class="large-6 columns">
-                        <button class="button" type="submit" value="submit" id="add-btn">Submit</button>
-                    </fieldset>
-                </div>
-                <small>Sign in with <a href="#">Facebook</a>, <a href="#">Google</a>, or <a href="#">Twitter</a>.</small>
-            </form>
-        </div>
+
+{{!--double--}}
+<div class="login-box">
+  <div class="row collapse expanded">
+
+   <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+      <div class="signup-box-social-section-inner">
+        <br> <br><br> <br><br> <br>
+       <br><br> 
+        <a class="login-box-social-button-twitter">My Profile</a>
+        <a class="login-box-social-button-google">Genre</a>
+      </div>
+      {{!--circle maybe to use elsewhere--}}
+         <div class="or">OR</div>
     </div>
-</form>
-<script type="text/javascript">
+    <div class="small-12 medium-6 column small-order-2 medium-order-1">
+     
+     
+      <div class="login-box-form-section">
+        <h1 class="login-box-title">Sign up</h1>
+        <input class="login-box-input" type="text" name="username" placeholder="Username" />
+        <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
+        <input class="login-box-input" type="password" name="password" placeholder="Password" />
+        <input class="login-box-input" type="password" name="password2" placeholder="Retype password" />
+        <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign Up" />
+      </div>
+   
+    </div>
 
-
-
-
-</script>
+  </div>
+</div>
