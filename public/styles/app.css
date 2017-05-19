@@ -132,7 +132,7 @@
     }
     
     .multilevel-offcanvas .social-links a:hover .fa {
-        color: #bebebe;
+        /*color: #bebebe;*/
         transition: color .2s ease-in;
     }
     
@@ -971,7 +971,7 @@
 }
 .login-box-social-button-twitter:hover,
 .login-box-social-button-twitter:focus {
-    background-color: #1a8fe8;
+    background-color: navajowhite;
     color: #fefefe;
 }
 .login-box-social-button-google {
@@ -1049,6 +1049,39 @@
     /*color: #fefefe;*/
     
     text-shadow: 1px 2px 2px black;
+}
+
+/*PROFILE PIC HEADER*/
+.profileSub {
+    color: #ff2733;
+    font-weight: bolder;
+}
+.profile-section-text h1 {
+    color: white;
+    font-size: -webkit-xxx-large;
+    font-size: 72px;
+    font-family: 'Audiowide', cursive;
+    opacity: 1;
+}
+.profile-section {
+    background: url("images/robots.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 30vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 4px white inset;
+}
+.profile-section .profile-section-text {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
 }
 .specialty {
     color: #ff5733;
