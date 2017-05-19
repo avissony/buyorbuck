@@ -513,6 +513,7 @@
         color: #ff5733;
         font-size: 16px;
         font-weight: bold;
+        margin: 0px auto;
         /*margin-top: 15px;*/
     }
     /*fontawesome double down icon*/
@@ -521,7 +522,6 @@
         content: "\f107";
         font-size: 40px;
         color: darkgray;
-        margin-top: 0px;
     }
     
     .fa-angle-up:before {
@@ -1189,17 +1189,15 @@
     font-family: 'Audiowide', cursive;
 }
 label {
-    color: darkslategray;
+    color: #ff5733;
     background-color: white;
-    /*font-weight: bold;*/
-    
-    font-size: 20px;
-    /*border: black .2px solid;*/
-    
-    border-radius: 10px;
-    padding: 1px;
+    font-size: 17px;
+    border: #ff5733 .2px solid;
+    border-radius: 5px;
+    padding: .5px;
     text-align: center;
-    margin-bottom: 5px;
+    margin: 5px auto;
+    width: 80%;
 }
 .mobile-app-toggle {
     display: -webkit-flex;
@@ -1226,7 +1224,7 @@ label {
 }
 .mobile-app-toggle .button.is-active {
     color: white;
-    background-color: #FF5733;
+    background-color: #ff5733;
     font-family: 'Audiowide', cursive;
     border: 1px solid #ff5733;
 }
@@ -1294,7 +1292,7 @@ label {
         /*background-color: #FF5733;*/
         transition: background-color 0.2s ease-in;
         cursor: pointer;
-        margin-bottom: 0px;
+        margin-bottom: 17px;
         padding: 4px;
     }
     
