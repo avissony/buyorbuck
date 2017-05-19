@@ -517,8 +517,18 @@
     }
     /*fontawesome double down icon*/
     
-    i.fa-angle-double-down {
-        font-size: 19px;
+    .fa-angle-down:before {
+        content: "\f107";
+        font-size: 40px;
+        color: darkgray;
+        margin-top: 0px;
+    }
+    
+    .fa-angle-up:before {
+        content: "\f106";
+        font-size: 40px;
+        color: darkgray;
+        margin-top: 2px;
     }
     /*IMAGE CARD*/
     
@@ -719,6 +729,11 @@
         transition: all 0.3s ease-in-out;
     }
     
+    .stat {
+        font-size: 1.7em;
+        color: #ff5733;
+    }
+    
     .card-profile-stats {
         border: 1px solid #cacaca;
         margin: 0 0 1.25rem;
@@ -739,12 +754,18 @@
         margin: 0;
     }
     
+    .card-profile-stats-intro-content h3 {
+        color: black;
+        font-family: 'Audiowide', cursive;
+        font-size: 34px;
+    }
+    
     .card-profile-stats .card-profile-stats-container {
         text-align: center;
     }
     
     .card-profile-stats .card-profile-stats-container .card-profile-stats-statistic {
-        margin: 0 0 1.25rem;
+        margin: 0 0;
     }
     
     .card-profile-stats .card-profile-stats-container .card-profile-stats-statistic p:last-child {
@@ -756,12 +777,22 @@
         text-align: center;
         font-size: 1.5rem;
         color: #0a0a0a;
-        padding: 0.5rem;
+        padding: 0rem;
         cursor: pointer;
+        line-height: 10px;
     }
     
     .card-profile-stats .card-profile-stats-more .card-profile-stats-more-content {
         display: none;
+    }
+    
+    .card-profile-stats-more-content p {
+        margin-bottom: 1rem;
+        font-size: inherit;
+        line-height: 1.6;
+        text-rendering: optimizeLegibility;
+        font-size: 19px;
+        color: darkslategray;
     }
     
     @media print,
@@ -887,8 +918,8 @@
     line-height: 1;
     text-align: center;
     cursor: pointer;
-    background-color: navajowhite;
-    color: black;
+    background-color: #ff5733;
+    color: white;
     display: block;
     width: 100%;
     margin-right: 0;
@@ -902,8 +933,9 @@
 }
 .login-box-submit-button:hover,
 .login-box-submit-button:focus {
-    background-color: navajowhite;
-    color: #fefefe;
+    background-color: white;
+    color: #FF5733;
+    border: #FF5733 1px solid;
 }
 .login-box-submit-button:hover,
 .login-box-submit-button:focus {
@@ -987,8 +1019,8 @@
     line-height: 1;
     text-align: center;
     cursor: pointer;
-    background-color: #FF5733;
-    color: #fefefe;
+    background-color: navajowhite;
+    color: black;
     display: block;
     width: 100%;
     margin-right: 0;
@@ -1053,8 +1085,7 @@
 
 /*PROFILE PIC HEADER*/
 .profileSub {
-    color: #ff2733;
-    font-weight: bolder;
+    color: black;
 }
 .profile-section-text h1 {
     color: white;
@@ -1064,7 +1095,7 @@
     opacity: 1;
 }
 .profile-section {
-    background: url("images/robots.jpg") 50% no-repeat;
+    background: url("images/fire.jpg") 50% no-repeat;
     background-size: cover;
     height: 30vh;
     text-align: center;
