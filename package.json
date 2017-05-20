@@ -18,13 +18,15 @@
   "homepage": "https://github.com/ChristopherManley/buyorbuck#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "dotenv": "^2.0.0",
     "debug": "^2.6.3",
+    "dotenv": "^2.0.0",
     "express": "^4.15.2",
     "express-handlebars": "^3.0.0",
+    "file-system": "^2.2.2",
     "method-override": "^2.3.8",
     "mysql": "^2.13.0",
     "passport-google-oauth": "^1.0.0",
+    "path": "^0.12.7",
     "sequelize": "^3.30.4"
   }
 }
